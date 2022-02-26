@@ -1,17 +1,9 @@
 // Styled JSX
 
 function Heading(props){
-  const variables = Math.random() > 0.5 ? "red" : "blue";
   return (
     <div>
-    <h1>{props.heading}</h1>
-    <style jsx global>
-        {`
-          h1{
-            color: ${variables};
-          }
-        `}
-    </style>
+    <h1 className="red">{props.heading}</h1>
   </div>
   )
 }
