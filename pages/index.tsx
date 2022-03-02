@@ -1,9 +1,9 @@
-import styles from './index.module.css'
+import styles from './index.module.scss'
 
 function Heading(props){
   return (
     <div>
-    <h1 className={styles.red}>{props.heading}</h1>
+    <h1 className={styles.red}><span>I&apos;m Red</span> {props.heading}</h1>
   </div>
   )
 }
